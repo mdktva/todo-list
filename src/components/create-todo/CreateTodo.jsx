@@ -2,7 +2,6 @@
 import React from "react";
 
 class CreateTodo extends React.Component{
-
     constructor(props){
         super(props);
         this.state = {
@@ -42,21 +41,6 @@ class CreateTodo extends React.Component{
     }
 
 
-
-// export default function CreateTodo() {
-
-//   function submit(e){
-//       e.preventDefault();
-//       console.log(e);
-//       console.log();
-//   }  
-//     return (
-//         <form onSubmit={submit} className="input-group">
-//             <input type="text" class="form-control" placeholder="Enter your todo" />
-//             <button type="submit" class="btn btn-primary">Submit</button>
-//         </form>
-//     )
-// }
 
 export default CreateTodo;
 

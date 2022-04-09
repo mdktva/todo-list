@@ -18,6 +18,12 @@
 .todo-list > div:nth-child(odd){
   background: rgb(177, 177, 177);
 }
+.loader{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 200px;
+}
 
 /* .input::-webkit-calendar-picker-indicator::-webkit-calendar-picker-indicator {
   filter: invert(1);
