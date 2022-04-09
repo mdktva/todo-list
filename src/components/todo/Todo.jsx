@@ -1,4 +1,4 @@
-import { click } from '@testing-library/user-event/dist/click'
+// import { click } from '@testing-library/user-event/dist/click'
 import css from './Todo.module.css'
 import React from 'react';
 
@@ -56,17 +56,19 @@ class Todo extends React.Component{
                 
                
                 <div className="d-flex justify-content-end p-2">
-                    <img className="note" style={{ width: "20px" }}
+                    <img className="note" alt="noteimg" style={{ width: "20px" }}
                     onClick={() => this.setState({isEdit: !this.state.isEdit})}
                         src={
                             this.props.ImgUrl
-                                ? this.props.ImgUrl
-                                : "https://www.pngfind.com/pngs/m/572-5721612_accounting-report-comments-notes-transparent-icon-hd-png.png"
+                                ? this.props.ImgUrl 
+                                : "https://www.pngfind.com/pngs/m/572-5721612_accounting-report-comments-notes-transparent-icon-hd-png.png" 
+                                
+                                
     
                         }
                     />
                     <img
-                        className="trash" style={{ width: "25px", }}
+                        className="trash" alt="trashimg" style={{ width: "25px", }}
                         onClick={() => this.props.onDelete(this.props.id)}
                         src={
                             this.props.ImgUrl
