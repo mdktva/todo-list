@@ -83,7 +83,7 @@ class App extends React.Component {
   render() {
     if (this.state.isLoading) {
       return <div className='loader'>
-        <img src='https://c.tenor.com/I6kN-6X7nhAAAAAj/loading-buffering.gif' />
+        <img src='https://c.tenor.com/I6kN-6X7nhAAAAAj/loading-buffering.gif' alt="loader" />
       </div>
     }
     return (
@@ -109,6 +109,8 @@ class App extends React.Component {
             </div>
           </div>
         </div>
+        </div>
+    )   
   }
 }
 
